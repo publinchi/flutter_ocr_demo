@@ -2,13 +2,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_ocr/ocr_page.dart';
 
-
 class Splash extends StatefulWidget {
   @override
   VideoState createState() => VideoState();
 }
-
-
 
 class VideoState extends State<Splash> with SingleTickerProviderStateMixin{
 
@@ -30,8 +27,6 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin{
   @override
   void initState() {
     super.initState();
-
-
 
     animationController = new AnimationController(
         vsync: this, duration: new Duration(seconds: 1));
@@ -60,14 +55,14 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin{
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
 
-              Padding(padding: EdgeInsets.only(bottom: 30.0),child:new Image.asset('assets/powered_by.png',height: 25.0,fit: BoxFit.scaleDown,))
+              Padding(padding: EdgeInsets.only(bottom: 30.0),child:new Image.asset('assets/thumb.png',height: 25.0,fit: BoxFit.scaleDown,))
 
             ],),
           new Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new Image.asset(
-                'assets/devs.jpg',
+                'assets/cobis.png',
                 width: animation.value * 250,
                 height: animation.value * 250,
               ),
